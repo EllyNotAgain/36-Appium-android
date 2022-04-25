@@ -22,13 +22,12 @@ public class SearchTest extends CoreTestCase {
                 "Cannot find search input"
         );
 
-        searchInput.sendKeys("Java");
+        searchInput.sendKeys("wfewfewfwegweg");
 
         WebElement expectedResult = mainPO.waitForElementPresent(
-                "xpath://*[./*[contains(@text,'Island of Indonesia')]]",
-                "Cannot find result 'Island of Indonesia' on 'Java' search"
+                "xpath://*[contains(@text,'No results found')]",
+                "Cannot find result 'No results found' on 'wfewfewfwegweg' search"
         );
 
-        expectedResult.click();
     }
 }
