@@ -11,7 +11,7 @@ import java.net.URL;
 public class CoreTestCase {
 
     protected AndroidDriver<WebElement> driver;
-    private static final String APPIUM_URL = "http://0.0.0.0:4723/wd/hub";
+    private static final String APPIUM_URL = "http://127.0.0.1:4723/wd/hub";
 
     @Before
     public void setUp() throws MalformedURLException {
@@ -29,7 +29,7 @@ public class CoreTestCase {
         capabilities.setCapability("automationName","Appium");
         capabilities.setCapability("appPackage","org.wikipedia");
         capabilities.setCapability("appActivity",".main.MainActivity");
-        capabilities.setCapability("app","/Users/vitalijkotov/SFMobile/apps/org.wikipedia.apk");
+        capabilities.setCapability("app","/Users/777/IdeaProjects/36.1/36-Appium-android/apps/org.wikipedia.apk");
         return capabilities;
     }
 }
